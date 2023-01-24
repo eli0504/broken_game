@@ -27,8 +27,7 @@ public class PlayerControllerX : MonoBehaviour
         playerAudio = GetComponent<AudioSource>();
 
         // Apply a small upward force at the start of the game
-
-        playerRb.AddForce(Vector3.up * 20, ForceMode.Impulse);
+        playerRb = GetComponent<Rigidbody>();
 
     }
 
@@ -38,10 +37,14 @@ public class PlayerControllerX : MonoBehaviour
         // While space is pressed and player is low enough, float up
         if (Input.GetKeyDown(KeyCode.Space) && !isOnTheGround && !gameOver )
         {
-            playerRb = GetComponent<Rigidbody>();
-            playerRb.AddForce(Vector3.up * floatForce, ForceMode.Impulse);
-            isOnTheGround = true;
+            Jump();
         }
+    }
+
+    private void Jump()
+    {
+        isOnTheGround = false;
+        playerRb.AddForce(Vector3.up * 20, ForceMode.Impulse);
     }
 
     private void OnCollisionEnter(Collision other)
