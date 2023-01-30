@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,11 +7,11 @@ public class MoveLeftX : MonoBehaviour
     public float speed; //velocity variable
     private PlayerControllerX playerControllerScript;
     private float leftBound = -10;
-
+   
     // Start is called before the first frame update
     void Start()
     {
-        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerControllerX>();
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerControllerX>(); //communication between scripts
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class MoveLeftX : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
 
     }
+
 }

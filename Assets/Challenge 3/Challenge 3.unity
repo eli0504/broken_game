@@ -258,7 +258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPrefabs:
   - {fileID: 8579601760348528630, guid: 0752829c2e3ba4cb78049ff40067a24f, type: 3}
-  - {fileID: 11368019182273911, guid: 1db47c5ef25154fb1806822c25335042, type: 3}
+  - {fileID: 6559770977528968870, guid: 906426ba79dae4340894ff0d82756e42, type: 3}
 --- !u!4 &460865717
 Transform:
   m_ObjectHideFlags: 0
@@ -671,11 +671,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 403952, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 403952, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: -0.87
       objectReference: {fileID: 0}
     - target: {fileID: 403952, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
       propertyPath: m_LocalPosition.z
@@ -710,12 +710,44 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19860484, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19860484, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19860484, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 19860484, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
       propertyPath: startDelay.scalar
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19860484, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
+      propertyPath: startDelay.minScalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19860484, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
+      propertyPath: startDelay.maxCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19860484, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
+      propertyPath: startDelay.maxCurve.m_Curve.Array.data[1].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19860484, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
+      propertyPath: startDelay.minCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19860484, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
+      propertyPath: startDelay.minCurve.m_Curve.Array.data[1].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19904564, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
@@ -862,6 +894,7 @@ MonoBehaviour:
   moneySound: {fileID: 8300000, guid: af9f934eb4288464eb120a5857921cc3, type: 3}
   explodeSound: {fileID: 8300000, guid: 774ebc5c074ce4695b7cc310fbd44087, type: 3}
   isOnTheGround: 0
+  yRange: 18
 --- !u!1001 &2097113909
 PrefabInstance:
   m_ObjectHideFlags: 0
