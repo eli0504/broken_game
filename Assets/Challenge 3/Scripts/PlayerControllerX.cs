@@ -44,17 +44,14 @@ public class PlayerControllerX : MonoBehaviour
             Jump();
         }
 
-        if (transform.position.y > yRange && gameObject.CompareTag("Player"))
-        {
-            PlayerInBounds();
-        }
+        PlayerInBounds();
     }
 
     private void PlayerInBounds()
     {
         if (transform.position.y > yRange && gameObject.CompareTag("Player"))
         {
-            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            playerRb.velocity = Vector3.zero;
         }
     }
 
