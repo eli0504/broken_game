@@ -20,7 +20,7 @@ public class PlayerControllerX : MonoBehaviour
 
     public bool isOnTheGround = true; //if the player hits the ground = gameOver
 
-    public float yRange = 18f;
+    private float yRange = 14f;
 
     private int points; //points counter
 
